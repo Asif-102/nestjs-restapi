@@ -6,6 +6,7 @@ import { AppService } from "./app.service";
 import { DatabaseModule } from "./database/database.module";
 import { EmployeesModule } from "./employees/employees.module";
 import { UsersModule } from "./users/users.module";
+import { MyLoggerModule } from './my-logger/my-logger.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { UsersModule } from "./users/users.module";
         limit: 100,
       },
     ]),
+    MyLoggerModule,
   ],
   controllers: [AppController],
   providers: [
